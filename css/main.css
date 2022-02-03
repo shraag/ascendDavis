@@ -330,9 +330,11 @@ h6 {
 
 #home-pillars .pillar-card {
   background-color: white;
-  border: 1px dotted var(--dark-color);
+  border: solid black 2px;
+  box-shadow:-18px 20px 5px 5px gray;
   display: inline-block;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 2rem;
   border-radius: 10px;
   box-sizing: border-box;
@@ -407,7 +409,87 @@ h6 {
 #home-images #grid-img-9 {
   grid-area: img9;
 }
-
+/* responsive web design for the images on home screen */
+@media only screen and (max-width:1650px) and (min-width:1100px){
+  #home-images {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33vh);
+    grid-gap: 2px;
+    grid-template-areas:
+      'pos1 pos1 pos2'
+      'pos3 pos3 pos4'
+      'pos5 pos5 pos4';
+    object-fit: cover;
+  }
+  #home-images #grid-img-1 {
+    grid-area: pos1;
+  }
+  #home-images #grid-img-2 {
+    display:none;
+  }
+  #home-images #grid-img-3 {
+    display:none;
+  }
+  #home-images #grid-img-4 {
+    grid-area: pos2;
+  }
+  #home-images #grid-img-5 {
+    grid-area: pos3;
+  }
+  #home-images #grid-img-6 {
+    display:none
+  }
+  #home-images #grid-img-7 {
+    display:none;
+  }
+  #home-images #grid-img-8 {
+    grid-area: pos5;
+  }
+  #home-images #grid-img-9 {
+    grid-area: pos4;
+  }
+}
+@media only screen and (max-width:1100px){
+  #home-images {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, 25vh);
+    grid-gap: 2px;
+    grid-template-areas:
+      'pos1'
+      'pos2'
+      'pos3';
+    object-fit: cover;
+  }
+  #home-images #grid-img-1 {
+    grid-area: pos1;
+  }
+  #home-images #grid-img-2 {
+    display:none;
+  }
+  #home-images #grid-img-3 {
+    display:none;
+  }
+  #home-images #grid-img-4 {
+    display:none;
+  }
+  #home-images #grid-img-5 {
+    grid-area:pos2;
+  }
+  #home-images #grid-img-6 {
+    display:none
+  }
+  #home-images #grid-img-7 {
+    display:none;
+  }
+  #home-images #grid-img-8 {
+    grid-area: pos3;
+  }
+  #home-images #grid-img-9 {
+    display:none;
+  }
+}
 /* Footer */
 #main-footer {
   background: var(--light-color);
