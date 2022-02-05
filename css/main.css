@@ -210,10 +210,11 @@ h6 {
   text-align: center;
   height: 100%;
   padding: 0 20px;
+  /* width:100%; */
 }
 
 .hero .content h1 {
-  font-size: 55px;
+  font-size: 3em;
   z-index: 1;
 }
 
@@ -244,21 +245,59 @@ h6 {
   padding-top: 2rem;
   background-color: var(--semilight-color);
 }
-
-#home-about .opportunity {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10rem;
-  text-align: center;
+@media only screen and (min-width:1200px) 
+{
+  #home-about .opportunity {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 3em;
+    text-align: center;
+    /* border:3px solid black; */
+  }
+  #home-about .opportunity-card {
+    width: 300px;
+  }
+}
+@media only screen and (min-width:728px) and (max-width:1199px){
+  #home-about .opportunity {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, 27vh);
+    grid-gap: 3em;
+    place-items:center;
+    text-align: center;
+    width:100%;
+    overflow:hidden;
+  }
+  #home-about .opportunity-card {
+    width: 700px;
+  }
+}
+@media only screen and (min-width:371px) and (max-width:727px){
+  #home-about .opportunity {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, 30vh);
+    grid-gap: 3em;
+    place-items:center;
+    text-align: center;
+    overflow:hidden;
+  }
+  #home-about .opportunity-card {
+    max-width: 700px;
+  }
+  @media only screen and (max-width:527px) {
+    #home-about .opportunity-icon {
+      margin-top:3em;
+    }
+  }
 }
 
-#home-about .opportunity-card {
-  width: 300px;
-}
+
+
 
 #home-about .opportunity-icon {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5em;
   border-radius: 50%;
   background: #333;
   color: #fff;
