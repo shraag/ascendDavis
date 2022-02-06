@@ -183,6 +183,7 @@ h6 {
   margin-top: 10px;
   max-width: 80%;
   max-height: 80%;
+
 }
 
 .navbar ul {
@@ -393,13 +394,54 @@ h6 {
   max-width: 100%;
   max-height: 100%;
 }
-
-#home-pillars .pillar-card .pillar-description {
-  float: left;
-  width: 50%;
-  padding: 1rem;
-  line-height: 1.7;
+@media only screen and (min-width:1150px){
+  #home-pillars .pillar-card .pillar-description {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+    line-height: 1.7;
+  }
 }
+@media only screen and (max-width:1150px) and (min-width:800px) {
+  #home-pillars .pillar-card .pillar-description #pillar-description-professionalism1 {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+    line-height: 1.7;
+  }
+  #home-pillars .pillar-card .pillar-description #pillar-description-professionalism2 {
+    /* float:left; */
+    /* width: 50%; */
+    padding: 1rem;
+    line-height: 1.7;
+    
+  }
+  #home-pillars .pillar-card .pillar-description #pillar-description-leadership1 {
+    /* float: left; */
+    /* width: 50%; */
+    padding: 1rem;
+    line-height: 1.7;
+  }
+}
+ @media only screen and (max-width:799px){
+  #home-pillars .pillar-card .pillar-image {
+    /* float: left; */
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+ }
+ @media only screen and (max-width:550px){
+  #home-pillars .pillar-card .pillar-image {
+    /* float: left; */
+    display:flex;
+    width: 100%;
+    height:100%;
+    /* height:40vh; */
+    justify-content:center;
+    padding: 1rem;
+  }
+ }
 
 /* Images */
 #home-images {
@@ -493,7 +535,7 @@ h6 {
   #home-images {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(3, 25vh);
+    grid-template-rows: repeat(3, 35vh);
     grid-gap: 2px;
     grid-template-areas:
       'pos1'
