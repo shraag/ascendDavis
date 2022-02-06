@@ -575,7 +575,7 @@ h6 {
   #home-images {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(3, 20vh);
+    grid-template-rows: repeat(3, 25vh);
     grid-gap: 2px;
     grid-template-areas:
       'pos1'
