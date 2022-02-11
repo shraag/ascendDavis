@@ -279,13 +279,16 @@ h6 {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(3, 30vh);
-    grid-gap: 3em;
+    grid-gap: 10em;
     place-items:center;
     text-align: center;
     overflow:hidden;
+    height:165vh;
   }
   #home-about .opportunity-card {
     max-width: 700px;
+    margin-top:100px;
+    
   }
   @media only screen and (max-width:527px) {
     #home-about .opportunity-icon {
@@ -504,7 +507,7 @@ h6 {
 #home-images #grid-img-7 {
   grid-area: img7;
 }
-
+/* Old Image Css */
 /* responsive web design for the images on home screen
 @media only screen and (max-width:1650px) and (min-width:1100px){
   #home-images {
