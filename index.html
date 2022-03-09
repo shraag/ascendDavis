@@ -19,6 +19,9 @@
     />
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <title>Ascend UC Davis - Home</title>
+
+    <!-- <script src="jquery-3.5.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="hero">
@@ -27,17 +30,26 @@
           <img src="img/ascend_logo.png" alt="AscendUCD" />
         </a>
         <nav>
-          <ul>
-            <li>
+          <!-- <ul class="scrollMenu">
+            <li class="scroll">
               <a style="color: #f1961f" href="/">Home</a>
             </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+            <li class="scroll"><a href="about.html">About</a></li>
+            <li class="scroll"><a href="members.html">Members</a></li>
+            <li class="scroll"><a href="events.html">Events</a></li>
+            <li class="scroll"><a href="apply.html">Apply</a></li>
+            <li class="scroll"><a href="contact.html">Contact</a></li>
+          </ul> -->
+          
         </nav>
+        <div class="scrollMenu">
+          <a class="scroll" style="color: #f1961f" href="/">Home</a>
+          <a class="scroll" href="about.html">About</a>
+          <a class="scroll" href="members.html">Members</a>
+          <a class="scroll" href="events.html">Events</a>
+          <a class="scroll" href="apply.html">Apply</a>
+          <a class="scroll" href="contact.html">Contact</a>
+        </div>
       </div>
 
       <div class="content">
@@ -121,7 +133,7 @@
               <img src="img/professional.jpg" alt="Professionalism" />
             </div>
             <div class="pillar-description">
-              <p>
+              <p id="pillar-description-professionalism1">
                 Ascend UC Davis holds workshops to help students succeed in the
                 professional world. We have resume workshops to ensure that our
                 members' resumes are ready to send off to potential employers,
@@ -129,7 +141,7 @@
                 expected at any workplace.
               </p>
               <br />
-              <p>
+              <p id="pillar-description-professionalism2">
                 Furthermore, Ascend UC Davis connects students to our national
                 chapter, providing a competitive edge in developing and
                 expanding their network. Ascend's annual National Convention
@@ -144,7 +156,7 @@
               <img src="img/leader.jpg" alt="Leadership" />
             </div>
             <div class="pillar-description">
-              <p>
+              <p id="pillar-description-leadership1">
                 Ascend UC Davis consists of five committees that members can
                 join - Career Development, Marketing, IT, Professional
                 Development and Student Affairs. In each of these committees,
@@ -159,7 +171,44 @@
     </section>
 
     <section id="home-images">
-      <div id="grid-img-1">
+      <div id="homeImagesContent">
+        <!-- <img class="grid-img" src="img/homepageImages/IMG_3290.JPG" alt="2" />
+        <img class="grid-img" src="img/homepageImages/IMG_6130.JPG" alt="2" /> -->
+        <!-- <img class="grid-img" src="img/homepageImages/IMG_6130.JPG" alt="2" /> -->
+          <img class="grid-img" src="">
+        <a class="back">
+          &#10094
+        </a>
+        <a class="next">
+          &#10095
+        </a>
+      </div>
+      <!-- <img class="grid-img" src="img/homepageImages/IMG_5951.JPG" alt="2" />
+      <img class="grid-img" src="img/homepageImages/IMG_5992.JPG" alt="2" />
+      <img class="grid-img" src="img/homepageImages/IMG_6130.JPG" alt="2" /> -->
+      <!-- <div id="grid-img-1">
+        <img class="grid-img" src="img/homepageImages/IMG_5951.JPG" alt="2" />
+      </div>
+      <div id="grid-img-2">
+        <img class="grid-img" src="img/homepageImages/IMG_5992.JPG" alt="2" />
+      </div>
+      <div id="grid-img-3">
+        <img class="grid-img" src="img/homepageImages/IMG_6114.JPG" alt="2" />
+      </div>
+      <div id="grid-img-4">
+        <img class="grid-img" src="img/homepageImages/IMG_6130.JPG" alt="2" />
+      </div>
+      <div id="grid-img-5">
+        <img class="grid-img" src="img/homepageImages/IMG_6142.JPG" alt="2" />
+      </div>
+      <div id="grid-img-6">
+        <img class="grid-img" src="img/homepageImages/IMG_6146.JPG" alt="2" />
+      </div>
+      <div id="grid-img-7">
+        <img class="grid-img" src="img/homepageImages/IMG_3290.JPG" alt="2" />
+      </div> -->
+      <!-- Old image format -->
+      <!-- <div id="grid-img-1">
         <img class="grid-img" src="img/one.jpg" alt="1" />
       </div>
       <div id="grid-img-2">
@@ -185,7 +234,7 @@
       </div>
       <div id="grid-img-9">
         <img class="grid-img" src="img/nine.jpg" alt="9" />
-      </div>
+      </div> -->
     </section>
 
     <!-- Universal Footer -->

@@ -42,3 +42,14 @@
   margin-bottom: 0.5em;
   font-family: 'Roboto', sans-serif;
 }
+@media only screen and (max-width:875px){
+  #contact-main .contact-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height:auto;
+    grid-gap: 5%;
+    /* margin-top:-10em; */
+    margin-bottom:30px;
+  }
+  
+}
