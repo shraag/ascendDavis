@@ -477,8 +477,8 @@ h6 {
 
 /* Images */
 #home-images {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33%;
+  /* display: grid;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: 20% 20% 25% 35%;
   grid-gap: 2px;
   grid-template-areas:
@@ -486,7 +486,50 @@ h6 {
     'img1 img1 img6'
     'img3 img4 img5'
     'img7 img7 img7';
-  object-fit: cover;
+  object-fit: cover; */
+  border:solid yellow 3px;
+  width:100%;
+  /* height:500px; */
+}
+#homeImagesContent{
+  /* height:500px; */
+  max-width:1000px;
+  border:solid pink 2px;
+  position:relative;
+  margin:auto;
+}
+
+.grid-img{
+  max-width:100%;
+  max-height:100%;
+  margin:0;
+  padding:0;
+}
+
+.back, .next{
+  cursor:pointer;
+  position:absolute;
+  max-width:auto;
+  font-weight: bold;
+  font-size:18px;
+  margin-top:-22px;  
+  top:50%;
+  padding:15px;
+  border-radius: 0 3px 3px 0;
+}
+
+.next{
+  right:0;
+
+}
+
+.back{
+  left:0;
+}
+
+.next:hover, .back:hover{
+  background-color:rgba(0, 0, 0, 0.5);
+  color:white;
 }
 
 /* #home-images .grid-img {
